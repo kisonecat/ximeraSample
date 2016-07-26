@@ -2,8 +2,6 @@
 
 \title{This is the sample!}
 
-\input{preamble}
-
 \begin{abstract}
 HELLO again and it begins again.
 \end{abstract}
@@ -11,51 +9,32 @@ HELLO again and it begins again.
 \begin{document}
 \maketitle
 
-\mypreamble
-
 \begin{tikzpicture}
   \draw (0,0) circle (1in);
   \draw (0,0) circle (0.25in);
   \draw (0,0) -- (1in,1in);
 \end{tikzpicture}
 
-Here's a graph of a parabola.
-\[
-\graph{y=x^2}
-\]
-Here's a graph of a sine wave.
-\[
-\graph{y=\sin x}
-\]
-Here's a graph of a TWO trig functions.
-\[
-\graph{y=\sin x, y=\cos x}
-\]
-Here's a polar graph.
-\[
-\graph{r=\theta^2}
-\]
+ \begin{problem}
+   The tolerance (0.01) means $8 \approx \answer[tolerance=0.01]{8}$
+ \end{problem}
 
-And FINALLY, here is a parametric example.
-\[
-\graph{(t^2,t^3)}
-\]
-And another parametric example.
-\[
-\graph{(t,\sqrt{t})}
-\]
+ \begin{problem}
+   The tolerance (0.01) means $\pi \approx \answer[tolerance=0.01]{3.141592653}$
+ \end{problem}
 
-%% \begin{problem}
-%%   The tolerance (0.01) means $8 \approx \answer[tolerance=0.01]{8}$
-%% \end{problem}
+\begin{foldable}
+  So this should be foldable.
 
-%% \begin{problem}
-%%   The tolerance (0.01) means $\pi \approx \answer[tolerance=0.01]{3.141592653}$
-%% \end{problem}
+  And even this $2^x$ thing should be.
 
-%% \begin{problem}
-%%   The tolerance (17) means $3421 \approx \answer[tolerance=17]{3421}$
-%% \end{problem}
+  \unfoldable{But not this.}  That is a key point.  \unfoldable{So is this.}
+
+ \begin{problem}
+   The tolerance (17) means $3421 \approx \answer[tolerance=17]{3421}$
+ \end{problem}
+
+\end{foldable}
 
 %% \begin{code}
 %%   var Expression = require('math-expressions');
