@@ -1,5 +1,4 @@
-define(['jquery', 'test'], function($, test) {
+define(['jquery'], function($) {
     alert('alert!');
-    console.log($);
-    console.log( "test=",test );
+    console.log( "this=",this );
 });
