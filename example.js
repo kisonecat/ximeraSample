@@ -1,7 +1,4 @@
 define(['jquery'], function($) {
-    alert('alert!');
-    console.log( "this=",this );
-
     var target = $(this);
 
     target.css('background-color','blue');
