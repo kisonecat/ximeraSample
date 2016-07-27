@@ -1,7 +1,7 @@
 define(['jquery'], function($) {
-    var target = $(this);
+    this.css('background-color','#EEE');
+    this.width("100%");
+    this.height(300);
 
-    target.css('background-color','blue');
-    target.width("100%");
-    target.height(300);
+    
 });
