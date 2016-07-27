@@ -1,1 +1,4 @@
-alert('alert!');
+$(function() {
+    alert('alert!');
+});
+
