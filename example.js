@@ -1,4 +1,4 @@
-define(['jquery'], function($) {
+define(['jquery', 'db'], function($, db) {
     var target = this;
     
     target.width("100%");
@@ -6,15 +6,15 @@ define(['jquery'], function($) {
 
     target.trigger( 'ximera:answer-needed' );
 
-    target.persistentData(function(event) {
-	if (target.persistentData( 'correct'))
+    db(function(event) {
+	if (db.correct)
 	    target.css('background-color','#DFE');
 	else
 	    target.css('background-color','#EEE');	    
     });
     
     target.click( function() {
-	target.persistentData( 'correct', true );
+	db.correct = true;
 	target.trigger( 'ximera:correct' );
     });
 });
