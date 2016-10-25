@@ -1,4 +1,4 @@
-define(['jquery', 'db'], function($, db) {
+define(['jquery', 'db', 'reset'], function($, db, reset) {
     var target = this;
     
     target.width("100%");
@@ -16,5 +16,9 @@ define(['jquery', 'db'], function($, db) {
     target.click( function() {
 	db.correct = true;
 	target.trigger( 'ximera:correct' );
+    });
+
+    reset( function() {
+	db.correct = false;
     });
 });
