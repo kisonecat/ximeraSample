@@ -1,5 +1,7 @@
-define(['jquery', 'db', 'reset'], function($, db, reset) {
+define(['jquery', 'db', 'reset', 'arguments'], function($, db, reset, arguments) {
     var target = this;
+
+    console.log(arguments);
     
     target.width("100%");
     target.height(300);
