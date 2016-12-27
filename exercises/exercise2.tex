@@ -1,9 +1,16 @@
 \documentclass{ximera}
 
+\newcommand{\squared}[1]{{#1}^2}
+
 \begin{document}
 
  \begin{problem}
-   The tolerance (0.01) means $9 \approx \answer[tolerance=0.01]{9}$
+   The tolerance (0.01) means $9 \approx \answer[tolerance=0.01]{\sage{3*3}}$
+ \end{problem}
+
+
+ \begin{problem}
+   The cooler thing is that code like $x^2 \approx \answer{\squared{x}}$ works!
  \end{problem}
 
 \end{document}
