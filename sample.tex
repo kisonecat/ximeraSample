@@ -27,7 +27,7 @@ waffle and Jeff and fine.
 \end{problem}
 
 \begin{problem}
-  String equality is like $\mbox{Dog} = \answer[format=string]{Dog}$.
+  String equality is like $\mbox{Dog} = \answer[format=string,id=word]{Dog}$.
 
   So the format determines a default validator, like format=string determines validator=stringEquality.  And now I removed the CDATA.
 \end{problem}
@@ -49,6 +49,8 @@ x = 5;
 \end{javascript}
 
 And another one.  $x + 10 = \js{y+10}$ is equal to \js{x + 10}.
+
+And the word ``\js{word}'' is \js{word.length} letters long.
 
 $\js{2+5} = 7$.
 
