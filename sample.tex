@@ -19,6 +19,15 @@ waffle and Jeff and fine.
 \end{tikzpicture}
 
 \begin{problem}
+  Find two integers which sum to five.
+
+  % this should be a callback potentially (I guess if it returns a function?)
+  \begin{validator}[a+b==5]
+    $\answer[format=integer,id=a]{2} + \answer[format=integer,id=b]{3} = 5$.
+  \end{validator}
+\end{problem}
+
+\begin{problem}
   String equality is like $\mbox{Dog} = \answer[format=string]{Dog}$.
 
   So the format determines a default validator, like format=string determines validator=stringEquality.  And now I removed the CDATA.
@@ -27,7 +36,12 @@ waffle and Jeff and fine.
 \begin{problem}
   The tolerance (0.01) means $8 \approx \answer[tolerance=0.01,id=y,format=integer]{8}$
   
-  \begin{feedback}[72]
+  \begin{feedback}[$5$]
+    The answer is definitely more than five.
+  \end{feedback}
+
+  \begin{feedback}[$10$]
+    The answer is certainly not ten.
   \end{feedback}
 \end{problem}
 
