@@ -18,29 +18,14 @@ waffle and Jeff and fine.
 \end{tikzpicture}
 
 \begin{problem}
-  \begin{multipleChoice}
-    \choice{Hello}
-    \choice{What?}
-    \choice{Goodbye}
+  So pick a variable.
+  \begin{multipleChoice}[id=v]
+    \choice[value=x]{$x$}
+    \choice[value=y]{$y$}
+    \choice[value=z]{$z$}
   \end{multipleChoice}
 
-  \begin{multipleChoice}[id=mc]
-    \choice[value=hello]{Hello}
-    \choice[value=what,correct]{What?}
-    \choice[value=goodbye]{Goodbye}
-  \end{multipleChoice}
-
-  You picked \js{mc}.
-
-  \begin{multipleChoice}
-    \choice[correct]{Right}
-    \choice{Wrong}
-  \end{multipleChoice}
-
-  \begin{multipleChoice}[id=tf]
-    \choice[correct,value=t]{T}
-    \choice[value=f]{F}
-  \end{multipleChoice}
+  You picked $\js{v}$ or, in text, \js{v}.
 \end{problem}
 
 \begin{problem}
