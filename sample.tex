@@ -18,6 +18,20 @@ waffle and Jeff and fine.
 \end{tikzpicture}
 
 \begin{problem}
+  \begin{multipleChoice}
+    \choice{Hello}
+    \choice{What?}
+    \choice{Goodbye}
+  \end{multipleChoice}
+
+  \begin{multipleChoice}[id=mc]
+    \choice{Hello}
+    \choice{What?}
+    \choice{Goodbye}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
   Find two integers which sum to twenty five.
 
   % this should be a callback potentially (I guess if it returns a function?)
@@ -27,7 +41,7 @@ waffle and Jeff and fine.
 \end{problem}
 
 \begin{problem}
-  String equality is like $\mbox{Dog} = \answer[format=string,id=word]{Dog}$.
+  String equality is like $\mbox{Dog} = \answer[format=string,id=word]{Dog}$.  Or just $\answer[format=string]{WHEE}$.
 
   So the format determines a default validator, like format=string determines validator=stringEquality.  And now I removed the CDATA.
 \end{problem}
