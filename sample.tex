@@ -25,10 +25,12 @@ waffle and Jeff and fine.
   \end{multipleChoice}
 
   \begin{multipleChoice}[id=mc]
-    \choice{Hello}
-    \choice[correct]{What?}
-    \choice{Goodbye}
+    \choice[value=hello]{Hello}
+    \choice[value=what,correct]{What?}
+    \choice[value=goodbye]{Goodbye}
   \end{multipleChoice}
+
+  You picked \js{mc}.
 
   \begin{multipleChoice}
     \choice[correct]{Right}
@@ -36,8 +38,8 @@ waffle and Jeff and fine.
   \end{multipleChoice}
 
   \begin{multipleChoice}[id=tf]
-    \choice[correct]{T}
-    \choice{F}
+    \choice[correct,value=t]{T}
+    \choice[value=f]{F}
   \end{multipleChoice}
 \end{problem}
 
