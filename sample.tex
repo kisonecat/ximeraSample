@@ -11,6 +11,8 @@ Testing interactives and ff.
 
 waffle and Jeff and fine.
 
+\includeinteractive{example2.js}
+
 \begin{tikzpicture}
   \draw (0,0) circle (1in);
   \draw (0,0) circle (0.25in);
@@ -57,7 +59,20 @@ waffle and Jeff and fine.
   So the format determines a default validator, like format=string determines validator=stringEquality.  And now I removed the CDATA.
 \end{problem}
 
+\begin{javascript}
+  function isPositive(number) {
+    return number > 0;
+  }
+\end{javascript}
+
 \begin{problem}
+  An example of a positive number is $\answer[id=z,validator=isPositive(z)]{17}$.
+
+  $\answer[validator=this>0]{17}$.
+
+  % validator should return 0 or false, 1 or true, partial credit btween 0 and 1, ...
+  $\answer[validator=isPositive, points=100]{17}$.
+
   The tolerance (0.01) means $8 \approx \answer[tolerance=0.01,id=x,format=integer]{8}$
   
   \begin{feedback}
