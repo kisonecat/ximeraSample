@@ -36,7 +36,7 @@ define(['jsxgraph', 'db'], function(JXG, db) {
 	db.n_e = n_e.Value();
     });
 
-    E_state=[]
+    var E_state=[];
     
     for(var i=0; i<n_e_max; i++) {
 	
@@ -63,7 +63,7 @@ define(['jsxgraph', 'db'], function(JXG, db) {
 	E.on('drag', function() {
 	    this.dragged=true;
 	    E_state[this.index].value = this.X();
-	    db.E_state=E_state
+	    db.E_state=E_state;
 	});
 	E.on('up', function(e) {
 	    if(e.timeStamp < this.mouseDownTime + clickTime && !this.dragged) {
@@ -75,7 +75,7 @@ define(['jsxgraph', 'db'], function(JXG, db) {
 		    this.setAttribute({fillOpacity: 0});
 		}
 		E_state[this.index].stable = this.stable;
-		db.E_state=E_state
+		db.E_state=E_state;
 	    }
 	});
     }
