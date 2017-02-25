@@ -11,8 +11,6 @@ Testing interactives and ff.
 
 waffle and Jeff and fine.
 
-\includeinteractive{example2.js}
-
 \begin{tikzpicture}
   \draw (0,0) circle (1in);
   \draw (0,0) circle (0.25in);
@@ -22,13 +20,30 @@ waffle and Jeff and fine.
 \begin{problem}
   So pick a variable.
   \begin{multipleChoice}[id=v]
-    \choice[value=x]{$x$}
+    \choice[correct,value=x]{$x$}
     \choice[value=y]{$y$}
     \choice[value=z]{$z$}
   \end{multipleChoice}
 
+  % propagate right and wrong to other \js places
   You picked $\js{v}$ or, in text, \js{v}.
 
+  %\begin{javascript}
+  %  bob.on('change', function() {
+  %    px = bob.x;
+  %    py = bob.y;
+  %  });
+  %\end{javascript}
+
+  %$(\answer[id=px,format=float]{4},\answer[id=py,format=float]{4})$
+
+  %\begin{validator}[bob.x == 4 && bob.y == 4]
+  %  \includeinteractive[id=bob,x=px,y=py]{example2.js}
+  
+  \includeinteractive[id=bob,width=10,height=10]{phase.js}
+
+  %  $(\js{bob.x},\js{bob.y})$
+  %\end{validator}
 
 \end{problem}
 
