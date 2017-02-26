@@ -11,6 +11,19 @@ Testing interactives and ff.
 
 waffle and Jeff and fine.
 
+\begin{sagesilent}
+  x = var('x')
+  a = 17
+  b = 12
+  c = 10
+  f = a*x*x + b*x + c
+
+  kind = 'saddle'
+\end{sagesilent}
+
+The polynomial is $\answer{\sage{f}}$.
+
+
 \begin{tikzpicture}
   \draw (0,0) circle (1in);
   \draw (0,0) circle (0.25in);
@@ -18,6 +31,8 @@ waffle and Jeff and fine.
 \end{tikzpicture}
 
 \begin{problem}
+  Pick an integer larger than 10, like $\answer[format=integer,validator=this>10]{11}$.
+
   So pick a variable.
   \begin{multipleChoice}[id=v]
     \choice[correct,value=x]{$x$}
