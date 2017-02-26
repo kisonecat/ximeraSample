@@ -10,15 +10,15 @@ Testing interactives and ff.
 \maketitle
 
 \begin{javascript}
-  isPositive = function(number) {
+  window.isPositive = function(number) {
     return number > 0;
   };
 
-  sameParity = function(a,b) {
+  window.sameParity = function(a,b) {
     return (a-b)%2 == 0;
   };
 
-  caseInsensitive = function(a,b) {
+  window.caseInsensitive = function(a,b) {
     return a.toLowerCase() == b.toLowerCase();
   };
 \end{javascript}
