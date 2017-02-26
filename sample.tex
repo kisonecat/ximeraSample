@@ -1,7 +1,7 @@
 \documentclass{ximera}
 
-\title{This is the sample!}
-\author{JIM!}
+\title{Sample interactives}
+\author{Jim Fowler}
 
 \begin{document}
 \begin{abstract}
@@ -9,7 +9,34 @@ Testing interactives and ff.
 \end{abstract}
 \maketitle
 
-waffle and Jeff and fine.
+\begin{javascript}
+  function isPositive(number) {
+    return number > 0;
+  }
+
+  function sameParity(a,b) {
+    return (a-b)%2 == 0;
+  }
+
+  function caseInsensitive(a,b) {
+    return a.toLowerCase() == b.toLowerCase();
+  }
+\end{javascript}
+
+\begin{problem}
+  Pick an integer larger than 10, like $\answer[format=integer,validator=this>10]{11}$.
+
+  Pick $\answer[format=integer,validator=isPositive]{17} > 0$.
+
+  Find a solution to $\answer[format=integer,validator=sameParity]{5} \equiv 5 \bmod 2$.
+
+  String equality is like $\mbox{Word} = \answer[format=string]{Word}$, but $\mbox{Word} = \answer[format=string,validator=caseInsensitive]{Word}$ is good too.
+\end{problem}
+
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
 
 \begin{sagesilent}
   x = var('x')
@@ -31,7 +58,7 @@ The polynomial is $\answer{\sage{f}}$.
 \end{tikzpicture}
 
 \begin{problem}
-  Pick an integer larger than 10, like $\answer[format=integer,validator=this>10]{11}$.
+
 
   So pick a variable.
   \begin{multipleChoice}[id=v]
@@ -92,16 +119,11 @@ The polynomial is $\answer{\sage{f}}$.
 \end{problem}
 
 \begin{problem}
-  String equality is like $\mbox{Dog} = \answer[format=string,id=word]{Dog}$.  Or just $\answer[format=string]{WHEE}$.
+  Or just $\answer[format=string]{WHEE}$.
 
   So the format determines a default validator, like format=string determines validator=stringEquality.  And now I removed the CDATA.
 \end{problem}
 
-\begin{javascript}
-  function isPositive(number) {
-    return number > 0;
-  }
-\end{javascript}
 
 \begin{problem}
   %An example of a positive number is $\answer[id=z,validator=isPositive(z)]{17}$.
