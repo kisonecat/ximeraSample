@@ -9,6 +9,26 @@ Testing interactives and ff.
 \end{abstract}
 \maketitle
 
+\begin{problem}
+  My favorite number is $y = \answer[format=integer,id=y]{17}$.
+
+  \begin{feedback}[attempt]
+    You made a first attempt!
+  \end{feedback}
+
+  \begin{feedback}[y>17]
+    That number is TOO BIG.
+  \end{feedback}
+
+  \begin{feedback}[y<17]
+    That number is too small.
+  \end{feedback}
+
+  \begin{feedback}[correct]
+    I have always loved the number 17.
+  \end{feedback}
+\end{problem}
+
 \begin{javascript}
   function isPositive(number) {
     return number > 0;
