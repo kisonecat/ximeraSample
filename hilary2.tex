@@ -1,0 +1,36 @@
+\documentclass{ximera}
+
+\title{Breaking Ximera Images!}
+%\author{Hilary Freeman}
+
+
+
+\begin{document}
+\begin{abstract}
+  This is my tikz image that doesn't work online. This is supposed to display a pair of axes with the word yes in the first quadrant. 
+\end{abstract}
+\maketitle
+
+Changes for pi day. Removing all figure files didn't help- when baking the xake the svg file was still at 0.
+
+Added an image environment.
+
+\begin{image}
+\begin{tikzpicture}
+\draw [thick, <->] (0,2) -- (0,0) -- (2,0);
+\node at (1,1) {yes};
+\end{tikzpicture}
+\end{image}
+
+
+\begin{verbatim}
+\begin{image}
+\begin{tikzpicture}
+\draw [thick, <->] (0,2) -- (0,0) -- (2,0);
+\node at (1,1) {yes};
+\end{tikzpicture}
+\end{image}
+\end{verbatim}
+
+
+\end{document}
