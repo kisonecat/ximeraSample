@@ -1,0 +1,64 @@
+\documentclass{ximera}
+
+\title{Completions}
+
+\begin{document}
+\begin{abstract}
+  Completions
+\end{abstract}
+\maketitle
+
+\begin{example}[A basic span]
+
+  $7 = \answer{7}$
+  $0 = \answer{0}$
+
+  \begin{question}
+    \begin{multipleChoice}
+      \choice[correct]{Yes.}
+      \choice{wrong}
+    \end{multipleChoice}
+    
+    \begin{feedback}[correct]
+      $\answer{5} = 5$
+    \end{feedback}
+  \end{question}
+  
+  \begin{question}
+    Question?
+
+    \begin{hint}
+      hint
+    \end{hint}
+    
+    \begin{multipleChoice}
+      \choice{wrong.}
+      \choice[correct]{right.}
+    \end{multipleChoice}
+
+    \begin{feedback}[correct]
+      $\answer{2} = 2$
+    \end{feedback}
+  \end{question}
+\end{example}
+
+\begin{example}
+  $2 = \answer{2}$
+
+  \begin{question}
+    \begin{multipleChoice}
+      \choice[correct]{Yes.}
+      \choice{wrong}
+    \end{multipleChoice}
+
+    \begin{feedback}[correct]
+      another?
+      \begin{multipleChoice}
+        \choice[correct]{correct}
+        \choice{wrong}
+      \end{multipleChoice} 
+    \end{feedback}
+  \end{question}
+\end{example}
+
+\end{document}
