@@ -53,9 +53,12 @@ and MORE
 
   slowOdd = function(a) {
     return new Promise( function(resolve, reject) {
-      setTimeout(function(){
-        resolve(a % 2 == 1);
-      }, 1000);      
+      if (a == 0)
+        reject('I do not like zero.');
+      else
+        setTimeout(function(){
+          resolve(a % 2 == 1);
+        }, 1000);      
     });
   };  
 \end{javascript}
