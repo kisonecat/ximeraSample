@@ -1,14 +1,10 @@
 \documentclass{ximera}
 
-\input{../../preamble.tex}
-\input{../../sage-preamble.tex}
-
 \author{Jim Fowler}
 
 \outcome{Compute the partial derivative of an expression.}
 
 \begin{document}
-\makerandom
 
 \begin{sagesilent}
   vs = ['x','y','z','t','w']
@@ -52,6 +48,13 @@
       \frac{\partial}{\partial\sage{x}} \left( \sage{f} \right) = \answer{\sage{derivative(f,x)}}.
     \]
   \end{prompt}
+
+  \begin{hint}
+    The original was $\sage{f}$ built from $\sage{x}$ and functions.
+  \end{hint}
+
+  \begin{hint}
+    The original was $\sage{x}$ and $\sage{y}$ are variables.  \end{hint}  
   
 \end{exercise}
 \end{document}
