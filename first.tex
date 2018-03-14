@@ -2,20 +2,12 @@
 
 \title[Breal-grond]{This is the sample! Waffle!  Iff!}
 
-\input{preamble}
-
 \begin{document}
 \begin{abstract}
   The begining and now an instructor! I am doing math like $\arcsin$. AGAIN
 \end{abstract}
 
 \maketitle
-
-\mypreamble
-
-\[
-  \graph{y=x^2}
-\]
 
 compare $\mathrm{x}$ to x.
 
@@ -25,6 +17,13 @@ Look at this:
 \[
   \pm 2
 \]
+
+\begin{sagesilent}
+  x = var('x')
+  p = x*x - x + 1
+\end{sagesilent}
+
+And therefore $p = \sage{p}$.
 
 It is a simple exercise to solve the system of two equations
 \begin{equation} \label{small}
