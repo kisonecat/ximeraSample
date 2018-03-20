@@ -4,58 +4,126 @@
 
 \begin{document}
 
-\begin{example}
-  This is an example.
-
-  $1 = \answer{1}$.
+\begin{exercise}
+Consider the indefinite integral:
+ 
+\[
+\int \frac{2x}{x^2-4} dx.
+\]
+ 
+This integral could be evaluated with a substitution, a trigonometric substitution, or by using partial fraction decomposition.
+ 
+%%%%%%%%u-sub%%%%%%%%%%%%
+If we want to evaluate the indefinite integral by using a substitution, let $u= \answer{x^2-4}$ so $du = \answer{2x} dx$.
+ 
+\begin{exercise}
+Making this substitution, we have:
+ 
+\[
+\int \frac{2x}{x^2-4} dx = \int \answer{\frac{1}{u}} du
+\]
+\begin{exercise}
+Evaluating gives:
+\[
+\int \frac{2x}{x^2-4} dx = \int\frac{1}{u} du = \answer{\ln|u|+C}
+\]
+(type the antiderivative in terms of $u$ and use $C$ for the constant of integration)
+ 
+and reversing the substitution gives:
+ 
+\[
+\int \frac{2x}{x^2-4} dx = \answer{\ln|x^2-4|+C}
+\]
+(type the antiderivative in terms of $x$ and use $C$ for the constant of integration)
+\end{exercise}
+\end{exercise}
+%%%%%%%%%%%   Trig Sub  %%%%%%%%%%%%
+\begin{exercise}
+If we want to use a trigonometric substitution, we should set $u=\answer{2} \sec(\theta)$.  Then, $du = \answer{2 \sec(\theta)\tan(\theta)}$, and after substituting into the original integral and simplifying:
+ 
+\[
+\int \frac{2x}{x^2-4} dx = \int \answer{\frac{2 \sec^2(\theta)}{\tan(\theta)}} d\theta
+\]
+(type your answer in terms of $\sec(\theta)$ and $\tan(\theta)$.
+ 
+\begin{exercise}
+We can evaluate this integral and find:
+ 
+\[
+ \int \frac{2 \sec^2(\theta)}{\tan(\theta)} d\theta = \answer{2 \ln|\tan(\theta)|+C}
+\]
+(Use $C$ for the constant of integration and make sure that your antiderivative is in terms of $\theta$)
+ 
+\begin{exercise}
+ 
+To reverse the substitution, we must write $\tan(\theta)$ in terms of $x$.  In fact, we find:
+ 
+\[
+\tan(\theta) = \answer{\frac{\sqrt{x^2-4}}{2}}
+\]
+ 
+\begin{exercise}
+We can now express the antiderivatives in terms of $x$ and find:
+ 
+\[
+\int \frac{2x}{x^2-4} dx =  2 \ln|\tan(\theta)|+C = \answer{2 \ln \left| \frac{\sqrt{x^2-4}}{2} \right| +C}
+\]
+ 
+\begin{exercise}
+Using the properties of logarithms, we can show
+ 
+\begin{align*}
+2 \ln \left| \frac{ \sqrt{x^2-4} }{2} \right| & = 2 \ln \left|(x^2-4)^{1/2} \right| - 2 \ln(2) \\
+& = 2 \cdot \frac{1}{2} \ln \left| x^2-4 \right| - 2 \ln(2) \textrm{ since } \ln\left(a^b\right) = b \ln(a) \\
+& =  \ln \left|x^2-4 \right| - 2 \ln(2)
+\end{align*}
+which differs from the antiderivative found using the $u$-substitution method by a constant!
+ 
+\end{exercise}
+\end{exercise}
+\end{exercise}
+\end{exercise}
+\end{exercise}
+ 
+%%%%%%%%%% Partial Fractions  %%%%%%%
+ 
+If we want to use partial fraction decomposition to evaluate the integral, we find:
+ 
+\[
+\frac{2x}{x^2-4} = \frac{2x}{(x-2)(x+2)} = \frac{\answer{1}}{x-2}+\frac{\answer{1}}{x+2}
+\]
+\begin{hint}
+The general partial fraction decomposition is:
+\[
+\frac{2x}{x^2-4} = \frac{2x}{(x-2)(x+2)} = \frac{A}{x-2}+\frac{B}{x+2}
+\]
+Solve for the constants and type your answers above!
+\end{hint}
+ 
+\begin{exercise}
+We can now evaluate the integral to obtain:
+ 
+\[
+\int \frac{2x}{x^2-4} dx = \int \frac{1}{x-2}+\frac{1}{x+2} dx = \answer{\ln|x-2| + \ln|x+2|+C}
+\]
   
-  \begin{problem}
-    And so $2 = \answer{2}$.
-  \end{problem}
+(Use $C$ for the constant of integration)
+ 
+\begin{exercise}
+Use the properties of logarithms, we find:
+ 
+\[ \ln|x-2| + \ln|x+2| = \ln \left( |x-2| \cdot |x+2|  \right) = \ln \left| x^2-4  \right| \]
+\end{exercise}
+\end{exercise}
+ 
+\begin{exercise}
+Are the results of the three procedures equivalent?
+\begin{multipleChoice}
+\choice[correct]{Yes}
+\choice{No}
+\end{multipleChoice}
+There is often more than one technique that can be used to find antiderivatives, but this exercise illustrates that some may be easier than others!
+\end{exercise}
+\end{exercise}
 
-  \begin{problem}
-    And so $3 = \answer{3}$.
-  \end{problem}
-  
-  \begin{hint}
-    HELLO!
-  \end{hint}  
-\end{example}
-
-\begin{quote}
-\textbf{Over \textcolor{red!50!black}{some region},
-\textcolor{green!70!black!70!blue}{sum up} products of
-\textcolor{purple!50!blue!90!black}{heights} and \textcolor{blue!70!green}{areas}.}
-\end{quote}
-
-\begin{problem}
-  $-\frac{\pi}{2}$ is the problem.
-  
-  $\answer{-\frac{\pi}{2}}$ was unanswerable
-
-and
-big thing is $\answer{\frac{g^{100}}{500}}$
-
-$\answer{\frac{-\pi}{2}}$ is answerable
-\end{problem}
-
-\begin{definition}[Homology]
-  $H_n = Z_n/B_n$ 
-\end{definition}
-
-\begin{itemize}
-\item hELLO
-\item yes
-\item goodbye
-\end{itemize}
-\begin{exploration}
-    \begin{tabular}{l|l|ll}
-      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3} & \textbf{Value 4}\\ % <-- added & and content for each column
-      $\alpha$ & $\beta$ & $\gamma$ & $\delta$ \\ % <--
-      \hline
-      1 & 1110.1 & a & e\\ 
-      2 & 10.1 & b & f\\ 
-      3 & 23.113231 & c & g\\ 
-    \end{tabular}
-    \end{exploration}
 \end{document}
