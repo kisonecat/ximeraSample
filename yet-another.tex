@@ -4,18 +4,31 @@
 
 \begin{document}
 
-\begin{javascript}
-  x = 12;
-  a = Math.round(Math.random()*10)
-  b = Math.round(Math.random()*10)
-\end{javascript}
+\begin{exercise}
+Let $f(x) = x^2-1$.
+ 
+We are calculating the value of $\displaystyle \int_{-1}^{2} f(x) \d x$.
+ 
 
-Note $\js{x} = 12$ and $\js{3*3} = 9$.
+We start by setting up the Riemann sum using $n$ rectangles using right endpoints.
+What is $\Delta x$?
+     
+\[ \Delta x = \answer{3/n} \]
 
-\begin{problem}
-  Consider $a = \js{a}$ and $b = \js{b}$.
-
-  And then $\js{a} + \answer{\js{b-a}} = \js{b}$.
-\end{problem}
+\begin{exercise}
+  Which of the following gives our choice of sample points?
+  \begin{multipleChoice}
+    \choice[correct]{$x_k^* = -1 + \frac{3k}{n}$}
+    \choice{$x_k^* = -1 + \frac{3(k-1)}{n}$}
+    \choice{$x_k^* = -1 + \frac{3\left(k-\frac{1}{2}\right)}{n}$}
+  \end{multipleChoice}
+  
+  \begin{exercise}
+    Calculate $f(x_k^*) \Delta x$ in terms of $k$ and $n$.
+    
+    \[ f(x_k^*) \Delta x = \frac{\answer{27}k^2}{n^3}-\frac{\answer{18}k}{n^2} \]
+  \end{exercise}
+\end{exercise}
+\end{exercise}
 
 \end{document}
