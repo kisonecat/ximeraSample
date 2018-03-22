@@ -6,7 +6,33 @@
 
 \begin{exercise}
 Let $f(x) = x^2-1$.
- 
+
+\begin{javascript}
+  a = Math.round(10*Math.random())
+  b = Math.round(10*Math.random())
+  c = Math.round(10*Math.random())  
+
+  function numericSubsetEquality(answer) {
+    var input = this;
+
+    answer = answer.sort();
+    try {
+      input = JSON.parse(input
+        .replace('{','[').replace('}',']')
+        .replace('(','[').replace(')',']'));
+    } catch (error) {
+      return false;
+    }
+    
+     return input.length==answer.length &&
+       answer.every(function(v,i) { return v === input[i]});
+  }
+\end{javascript}
+
+\begin{problem}
+  $\js{new Set([a,b,c])}$ is equal to $\answer[validator=numericSubsetEquality([a,b,c]),format=string]{}$.
+\end{problem}
+
 We are calculating the value of $\displaystyle \int_{-1}^{2} f(x) \d x$.
  
 
