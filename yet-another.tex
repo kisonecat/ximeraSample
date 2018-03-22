@@ -4,9 +4,6 @@
 
 \begin{document}
 
-\begin{exercise}
-Let $f(x) = x^2-1$.
-
 \begin{javascript}
   a = Math.round(10*Math.random())
   b = Math.round(10*Math.random())
@@ -15,13 +12,9 @@ Let $f(x) = x^2-1$.
   function setEquality(answer, input) {
     answer = eval(answer).sort();
     
-    try {
-      input = JSON.parse(input
-        .replace('{','[').replace('}',']')
-        .replace('(','[').replace(')',']')).sort();
-    } catch (error) {
-      return false;
-    }
+    input = JSON.parse(input
+      .replace('{','[').replace('}',']')
+      .replace('(','[').replace(')',']')).sort();
     
      return input.length==answer.length &&
        answer.every(function(v,i) { return v === input[i]});
@@ -32,6 +25,9 @@ Let $f(x) = x^2-1$.
 \begin{problem}
   $\{\js{a},\js{b},\js{c}\}$ is equal to $\answer[validator=setEquality,format=string]{[a,b,c]}$.
 \end{problem}
+
+\begin{exercise}
+Let $f(x) = x^2-1$.
 
 We are calculating the value of $\displaystyle \int_{-1}^{2} f(x)  x$.
  
