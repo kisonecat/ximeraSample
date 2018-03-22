@@ -12,10 +12,9 @@ Let $f(x) = x^2-1$.
   b = Math.round(10*Math.random())
   c = Math.round(10*Math.random())  
 
-  function numericSubsetEquality(answer) {
-    var input = this;
-
-    answer = answer.sort();
+  function setEquality(answer, input) {
+    answer = eval(answer).sort();
+    
     try {
       input = JSON.parse(input
         .replace('{','[').replace('}',']')
@@ -26,11 +25,12 @@ Let $f(x) = x^2-1$.
     
      return input.length==answer.length &&
        answer.every(function(v,i) { return v === input[i]});
-  }
+   }
+
 \end{javascript}
 
 \begin{problem}
-  $\js{new Set([a,b,c])}$ is equal to $\answer[validator=numericSubsetEquality([a,b,c]),format=string]{}$.
+  $\js{new Set([a,b,c])}$ is equal to $\answer[validator=setEquality,format=string]{[a,b,c]}$.
 \end{problem}
 
 We are calculating the value of $\displaystyle \int_{-1}^{2} f(x)  x$.
