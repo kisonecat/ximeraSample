@@ -47,7 +47,7 @@ Fthrust = 30.0;
 mass = 3.0;
 dt = 0.1;
 
-function draw(){
+p.draw = function() {
     // Update velocities
     vx += deltaVx;
 
@@ -87,7 +87,7 @@ function draw(){
 xhistory = [];
 yhistory = [];
 
-function setup(){
+p.setup = function() {
     createCanvas(750, 500);
     x = width/2;
     y = height/2;
