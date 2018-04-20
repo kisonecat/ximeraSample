@@ -17,66 +17,6 @@
 
 \begin{document}
 
-\section{Calculus 1 Lab 5 \\ An Application of Integration - Arc Length}
-
-%% Have to edit the date here each semester.
-\begin{abstract}
-In this lab, we will explore how we can calculate arc length using a definite integral.  This lab corresponds to section 6.3 in our physical textbook, so feel free to use the textbook as a resource while completing this lab.\\
-
-Unless stated otherwise, input answers in \underline{exact form} on this lab.
-\end{abstract}
- 
-\maketitle
-
-
-The reason we call such function \textit{smooth} is because if $f'(x)$ is continuous, then the graph of $f$ will have no discontinuities, corners, or cusps.  If continuous function are considered \textit{nice} functions, then smooth functions are \textit{very nice} functions - after all, not having to worry about corners or cusps in $f$ makes our lives much, much easier.  If you continue learning calculus, you are likely to see smoothness as a hypothesis of many more theorems to come, starting with the following theorem. 
-
-\begin{theorem}[Formula for Arc Length of Smooth Functions]
-If $f(x)$ is a smooth function on $[a,b],$ then the arc length of $f(x)$ on the interval $[a,b]$ is equal to 
-
-$$\displaystyle\int_{a}^{b} \sqrt{1+(f'(x))^2} \ dx$$
-
-\end{theorem}
-
-\begin{warning}
-Because $\frac{dy}{dx} = f'(x),$ the above formula could also be written as 
-
-$$\displaystyle\int_{a}^{b} \sqrt{1+\left(\frac{dy}{dx}\right)^2} \ dx.$$ 
-
-Be aware that this is the same formula, just written using a different notation for the derivative.  In fact, if you take calculus II, you will return to calculating arc lengths, and you are more likely to see this version of the arc length formula.  
-\end{warning}
-
-\section{Practice calculating arc lengths}
-
-%%Practice Problem 1 - Checking sinx Estimate%%
-
-Now that we have derived a formula for the arc length of a curve on a particular interval, let's use this formula to determine the exact arc length of $f(x)=\sin(x)$ on the interval $[0,2\pi]$.  Of course, before using this formula, we must verify that $f(x)=\sin(x)$ is smooth on $[0,2\pi]$.
-
-\begin{problem}
-
-Determine the arc length of $f(x) = \sin(x)$ on the interval $[0, 2\pi].$
-
-$f'(x) = \answer{\cos(x)}$
-
-\begin{problem}
-
-Therefore $f(x)$ is \wordChoice {\choice[correct]{smooth}\choice{not smooth}} on $[0,2\pi]$ because \wordChoice {\choice{f(x) is continuous} \choice[correct]{f'(x) is continuous} \choice{f(x) is not continuous} \choice{f'(x) is not continuous}} on $[0,2\pi]$.  
-
-\begin{problem}
-
-Finally, we can write an integral to evaluate the arc length of the curve on the specified interval and evaluate it using technology.  Our original approximation of this arc length with $n=4$ line segments was 7.45, which turns out to be pretty close to the exact value.  
-
-Arc Length = $\displaystyle\int_{\answer{0}}^{\answer{2\pi}} \sqrt{1+{\answer{\cos(x)}^2}} \ dx \approx \answer{7.64}$ (Evaluate the arc length to 2 decimal places with technology)
-
-
-\end{problem}
-\end{problem}
-\end{problem}
-
-Let's try calculating the arc length of another function.  This time, you will be able to evaluate the resulting integral for arc length by hand using the techniques we've learned in class.
-
-%%Practice Problem 2 - Standard WRT x%%
-
 \begin{problem}
 
 Find the exact arc length of $y = x^{\frac{3}{2}}$ from $x=0$ to $x=4$.  First, we determine if $y$ is smooth on the x-interval $[0,4]$.  
