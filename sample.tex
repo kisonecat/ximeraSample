@@ -1,7 +1,9 @@
-\documentclass[handout]{ximera}
+\documentclass{ximera}
 
 \title{Sample interactives}
 \author{Jim Fowler}
+
+\usepackage{tikz-cd}
 
 \begin{document}
 \begin{abstract}
@@ -13,6 +15,17 @@ Now I'm using metadata too.
 
 MORE GOES HERE!
 and MORE
+
+There's a free response box here.
+\begin{freeResponse}
+  
+\end{freeResponse}
+
+\begin{tikzpicture}
+\node {\begin{tikzcd}[row sep=huge,baseline = (B.base)]
+  A \arrow[rd] \arrow[r, "\varphi"] & |[alias=B]| B \\ & C
+\end{tikzcd}};
+\end{tikzpicture}
 
 \begin{problem}
   Blah!
@@ -30,6 +43,11 @@ and MORE
     \end{multipleChoice}
   \end{ungraded}
 \end{problem}
+
+\begin{problem}
+  \wordChoice{\choice{$x \neq x$}\choice{$1 = 2$}\choice[correct]{YES}}  
+\end{problem}
+
 
 \begin{problem}
   There are two things here.
