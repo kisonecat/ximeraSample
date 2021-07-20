@@ -180,59 +180,6 @@
 \newcommand{\sliceColor}{greenyellow}
 
 
-
-
-\pgfmathdeclarefunction{gauss}{2}{% gives gaussian
-  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
-}
-
-
-%%%%%%%%%%%%%
-%% Vectors
-%%%%%%%%%%%%%
-
-%% Simple horiz vectors
-\renewcommand{\vector}[1]{\left\langle #1\right\rangle}
-
-
-%% %% Complex Horiz Vectors with angle brackets
-%% \makeatletter
-%% \renewcommand{\vector}[2][ , ]{\left\langle%
-%%   \def\nextitem{\def\nextitem{#1}}%
-%%   \@for \el:=#2\do{\nextitem\el}\right\rangle%
-%% }
-%% \makeatother
-
-%% %% Vertical Vectors
-%% \def\vector#1{\begin{bmatrix}\vecListA#1,,\end{bmatrix}}
-%% \def\vecListA#1,{\if,#1,\else #1\cr \expandafter \vecListA \fi}
-
-%%%%%%%%%%%%%
-%% End of vectors
-%%%%%%%%%%%%%
-
-%\newcommand{\fullwidth}{}
-%\newcommand{\normalwidth}{}
-
-
-
-%% makes a snazzy t-chart for evaluating functions
-%\newenvironment{tchart}{\rowcolors{2}{}{background!90!textColor}\array}{\endarray}
-
-%%This is to help with formatting on future title pages.
-\newenvironment{sectionOutcomes}{}{}
-
-
-
-%% Flowchart stuff
-%\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black]
-%\tikzstyle{question} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black]
-%\tikzstyle{decision} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black]
-%\tikzstyle{question} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black]
-%\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black]
-%\tikzstyle{decision} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black]
-
-
 \title{Xloud tests}
  
 \begin{document}
