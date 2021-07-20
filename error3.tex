@@ -1,0 +1,99 @@
+\documentclass{ximera}
+
+%\usepackage{todonotes}
+%\usepackage{mathtools} %% Required for wide table Curl and Greens
+%\usepackage{cuted} %% Required for wide table Curl and Greens
+\newcommand{\todo}{}
+
+\usepackage{esint} % for \oiint
+\ifxake%%https://math.meta.stackexchange.com/questions/9973/how-do-you-render-a-closed-surface-double-integral
+\renewcommand{\oiint}{{\large\bigcirc}\kern-1.56em\iint}
+\fi
+
+
+\graphicspath{
+  {./}
+  {ximeraTutorial/}
+  {basicPhilosophy/}
+  {functionsOfSeveralVariables/}
+  {normalVectors/}
+  {lagrangeMultipliers/}
+  {vectorFields/}
+  {greensTheorem/}
+  {shapeOfThingsToCome/}
+  {dotProducts/}
+  {partialDerivativesAndTheGradientVector/}
+  {../productAndQuotientRules/exercises/}
+  {../motionAndPathsInSpace/exercises/}
+  {../normalVectors/exercisesParametricPlots/}
+  {../continuityOfFunctionsOfSeveralVariables/exercises/}
+  {../partialDerivativesAndTheGradientVector/exercises/}
+  {../directionalDerivativeAndChainRule/exercises/}
+  {../commonCoordinates/exercisesCylindricalCoordinates/}
+  {../commonCoordinates/exercisesSphericalCoordinates/}
+  {../greensTheorem/exercisesCurlAndLineIntegrals/}
+  {../greensTheorem/exercisesDivergenceAndLineIntegrals/}
+  {../shapeOfThingsToCome/exercisesDivergenceTheorem/}
+  {../greensTheorem/}
+  {../shapeOfThingsToCome/}
+  {../separableDifferentialEquations/exercises/}
+  {vectorFields/}
+}
+
+\newcommand{\mooculus}{\textsf{\textbf{MOOC}\textnormal{\textsf{ULUS}}}}
+
+\usepackage{tkz-euclide}\usepackage{tikz}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows}
+\tikzset{>=stealth,commutative diagrams/.cd,
+  arrow style=tikz,diagrams={>=stealth}} %% cool arrow head
+\tikzset{shorten <>/.style={ shorten >=#1, shorten <=#1 } } %% allows shorter vectors
+
+\usetikzlibrary{backgrounds} %% for boxes around graphs
+\usetikzlibrary{shapes,positioning}  %% Clouds and stars
+\usetikzlibrary{matrix} %% for matrix
+\usepgfplotslibrary{polar} %% for polar plots
+\usepgfplotslibrary{fillbetween} %% to shade area between curves in TikZ
+%\usetkzobj{all} obsolete
+
+\usepackage[makeroom]{cancel} %% for strike outs
+%\usepackage{mathtools} %% for pretty underbrace % Breaks Ximera
+%\usepackage{multicol}
+\usepackage{pgffor} %% required for integral for loops
+
+
+
+%% http://tex.stackexchange.com/questions/66490/drawing-a-tikz-arc-specifying-the-center
+%% Draws beach ball
+\tikzset{pics/carc/.style args={#1:#2:#3}{code={\draw[pic actions] (#1:#3) arc(#1:#2:#3);}}}
+
+
+\title{Xloud tests}
+ 
+\begin{document}
+\begin{abstract}
+  We test the Xloud platform.
+\end{abstract}
+\maketitle
+ 
+\section{Testing theorems}
+
+\begin{exercise}
+  An exercise is $1+1 = \answer{2}$.
+  
+  \begin{exercise}
+    The first sub-exercise.
+  \end{exercise}
+
+  \begin{exercise}
+    The second sub-exercise where $\answer{4} = 4$.
+  \end{exercise}  
+\end{exercise}
+
+There is a video.
+
+\youtube{JsaNtKVcDfk}
+
+And so it is.
+ 
+\end{document}
